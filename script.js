@@ -76,16 +76,16 @@ function Card(description) {
     this.$element = createCard();
 
     function createCard() {
-    var $card = $('<li>').addClass('card');
-    var $cardDescription = $('<p>').addClass('card-description').text(self.description);
-    var $cardDelete = $('<button>').addClass('btn-delete').text('x');
+      var $card = $('<li>').addClass('card');
+      var $cardDescription = $('<p>').addClass('card-description').text(self.description);
+      var $cardDelete = $('<button>').addClass('btn-delete').text('x');
 	//odpiêcie karty
 	  $cardDelete.click(function(){
         self.removeCard();
       });
-	$card.append($cardDelete)
-	.append($cardDescription);
-  return $card;
+	   $card.append($cardDelete)
+	   .append($cardDescription);
+    return $card;
  }
 }
 
@@ -114,9 +114,9 @@ function initSortable() {
  $('.create-column')
   .click(function(){
 	// Zapisanie w zmiennej prompta- nowego okna dialogowego, w którym mozna wpisac nazwę kolumny
-	var name = prompt('Enter a column name');
+	 var name = prompt('Enter a column name');
 	// Funkcja utworzy też nową instancję, która z kolei ustawi tytuł kolumny
-	var column = new Column(name);
+	 var column = new Column(name);
 	//utworzenie nowej kolumny
     	board.addColumn(column);
   });
@@ -133,8 +133,8 @@ board.addColumn(doingColumn);
 board.addColumn(doneColumn);
 
 // CREATING CARDS
-var card1 = new Card('New task');
-var card2 = new Card('Create kanban boards');
+var card1 = new Card('Inna karteczka');
+var card2 = new Card('Przykladowa karteczka z zadaniem');
 
 // ADDING CARDS TO COLUMNS
 todoColumn.addCard(card1);
