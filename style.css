@@ -2,5 +2,46 @@ body {
 	margin: 0 auto;
 	display: block;
 	background-color: turquoise;
+	display: flex;
 	text-align: center;
+	justify-content: center;
+	align-content: center;
+	
+}
+
+.board {
+	background-image: url('cork.jpg'); 
+	padding: 40px;
+	margin: 30px;
+}
+.create-column {
+	background-color: green;
+}
+.column-container {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	list-style-type: none;
+	text-align: center;
+}
+
+.card {
+	background-image: url('yellow.jpg');
+	/* background-color: yellow; */
+	list-style-type: none;
+	font-family: 'Indie Flower', cursive;
+}
+.card p {
+	margin: 10px;
+}
+.column-title {
+	font-family: 'Josefin Slab', serif;
+	background-color:aliceblue;
+	padding: 8px;
+}
+.btn-delete {
+	
 }
