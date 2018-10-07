@@ -1,8 +1,11 @@
 /* * {border: solid red;
 } */
+/* * {border: solid red;
+} */
 body {
 	margin: 0 auto;
 	display: block;
+	max-width: 1200px;
 	background-color: turquoise;
 	display: flex;
 	text-align: center;
@@ -13,14 +16,17 @@ body {
 
 .board {
 	background-image: url('cork.jpg'); 
+	max-width: 1200px;
 	padding: 40px;
 	margin: 30px;
 }
 .create-column {
 	background-color: green;
-	
-}
 
+}
+.column-card-list li {
+	align-self: center;
+}
 .add-card {
 	background-color: green;
 }
@@ -32,7 +38,7 @@ h1 {font-family: 'Josefin Slab', serif;
 	}
 
 .column-container {
-	list-style-type: none;
+	
 	display: flex;
 	flex-direction: row;
 }
@@ -41,6 +47,7 @@ h1 {font-family: 'Josefin Slab', serif;
 	list-style-type: none;
 	text-align: center;
 	width:200px;
+
 }
 
 .card {
@@ -48,6 +55,8 @@ h1 {font-family: 'Josefin Slab', serif;
 	/* background-color: yellow; */
 	list-style-type: none;
 	font-family: 'Indie Flower', cursive;
+	justify-content: center;
+
 }
 .card p {
 	margin: 10px;
