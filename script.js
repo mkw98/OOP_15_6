@@ -34,12 +34,13 @@ $(function() {
 			self.addCard(new Card(prompt("Enter the name of the card")));
 			//Ostatnim krokiem tworzenia funkcji createColumn() jest po³¹czenie wszystkich wêzłów w odpowiedniej kolejnoœci. 
 			//Najpierw tytuł, potem przyciski delete i addCard, a na końcu lista kart:
-			$column.append($columnTitle)
-        .append($columnDelete)
-        .append($columnAddCard)
-        .append($columnCardList);
-		return $column;
+			
 		});
+	    $column.append($columnTitle)
+            .append($columnDelete)
+            .append($columnAddCard)
+            .append($columnCardList);
+		return $column;
     }
   }
 
