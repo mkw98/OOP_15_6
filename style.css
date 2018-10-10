@@ -1,7 +1,6 @@
 /* * {border: solid red;
 } */
-/* * {border: solid red;
-} */
+
 body {
 	margin: 0 auto;
 	display: block;
@@ -26,6 +25,11 @@ body {
 }
 .column-card-list li {
 	align-self: center;
+}
+.column-card-list {
+	min-height: 100px;
+	padding: 0;
+	margin: 10px;
 }
 .add-card {
 	background-color: green;
